@@ -1,0 +1,7 @@
+Hazard,Cause,Control,Evidence/verification
+External electrical path,USB/charger connected during electrode use,Battery-only policy; physical disconnection,Pre-use checklist
+Exposed conductors,Open breadboard,No human-connected use; supervised bench work only,Visual inspection
+Battery fault,"Wrong polarity, incompatible charger or unprotected cell",Protected source and compatibility check,Voltage/polarity inspection
+Signal misinterpretation,Qualitative waveform treated as diagnosis,No clinical interpretation or automated diagnosis,Firmware and labels
+Data loss,SD write interruption,"Status field, periodic flush and file inspection",Functional test protocol
+Lead-off/noise,Loose or open lead,LO+/LO- status logging,Simulator/open-lead test

@@ -1,0 +1,6 @@
+Documentation and original figures are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+SPDX-License-Identifier: CC-BY-4.0
+
+Licence information:
+https://creativecommons.org/licenses/by/4.0/

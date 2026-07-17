@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<style>
+.box{fill:#f7fbff;stroke:#46637a;stroke-width:3;rx:16;ry:16}
+.ecg{fill:#fff0f0;stroke:#b64242;stroke-width:3}
+.i2c{fill:#eefaf3;stroke:#16845c;stroke-width:3}
+.spi{fill:#f4efff;stroke:#6642ba;stroke-width:3}
+.power{fill:#fff8e8;stroke:#a67513;stroke-width:3}
+.t{font-family:Arial,sans-serif;font-size:24px;font-weight:bold;fill:#1b2d3d;text-anchor:middle}
+.s{font-family:Arial,sans-serif;font-size:18px;fill:#455562;text-anchor:middle}
+.line{stroke:#405b6c;stroke-width:4;fill:none;marker-end:url(#arrow)}
+.red{stroke:#bf3030}.green{stroke:#16845c}.purple{stroke:#6642ba}.gold{stroke:#a67513}
+</style>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#405b6c"/></marker></defs>
+<text x="800" y="45" class="t" style="font-size:32px">Signal, control and optional power connections</text>
+<rect x="55" y="160" width="260" height="120" class="box"/><text x="185" y="205" class="t">ECG electrodes</text><text x="185" y="242" class="s">RA / LA / RL</text>
+<rect x="55" y="360" width="310" height="160" class="ecg"/><text x="210" y="410" class="t">AD8232</text><text x="210" y="450" class="s">OUT, LO+, LO-, SDN</text>
+<rect x="500" y="220" width="380" height="340" class="box"/><text x="690" y="275" class="t">ESP32-C3</text><text x="690" y="320" class="s">OUT → GPIO0 / ADC</text><text x="690" y="355" class="s">LO+ → GPIO1</text><text x="690" y="390" class="s">LO- → GPIO3</text><text x="690" y="425" class="s">SDN → GPIO10</text><text x="690" y="460" class="s">Buzzer → GPIO2</text>
+<rect x="1040" y="110" width="350" height="105" class="i2c"/><text x="1215" y="150" class="t">SSD1306 OLED</text><text x="1215" y="185" class="s">SDA GPIO20 • SCL GPIO21</text>
+<rect x="1040" y="270" width="350" height="105" class="i2c"/><text x="1215" y="310" class="t">DS3231 RTC</text><text x="1215" y="345" class="s">shared I²C bus</text>
+<rect x="1040" y="430" width="350" height="105" class="i2c"/><text x="1215" y="470" class="t">INA219</text><text x="1215" y="505" class="s">shared I²C bus</text>
+<rect x="1040" y="590" width="350" height="135" class="spi"/><text x="1215" y="630" class="t">microSD module</text><text x="1215" y="670" class="s">SCK 4 • MISO 5</text><text x="1215" y="700" class="s">MOSI 6 • CS 7</text>
+<path d="M185 280 L185 360" class="line red"/><path d="M365 440 L500 390" class="line red"/>
+<path d="M880 300 L1040 160" class="line green"/><path d="M880 350 L1040 320" class="line green"/><path d="M880 400 L1040 480" class="line green"/><path d="M880 480 L1040 650" class="line purple"/>
+<rect x="130" y="700" width="690" height="115" class="power"/><text x="475" y="742" class="t">Optional solar charging extension</text><text x="475" y="780" class="s">5 V panel ≥3 W → compatible protected charger → battery → regulated system rail</text>
+<path d="M820 758 L1030 758" class="line gold"/><text x="1160" y="770" class="s">Disconnect charging and USB during electrode-connected operation</text>
+</svg>

@@ -1,0 +1,6 @@
+Reference firmware static syntax check
+Date: 2026-07-17
+Command: g++ -std=c++17 -fsyntax-only using interface stubs
+Result: PASS
+
+Scope limitation: This confirms C++ syntax and interface consistency only. It is not a physical-board compile, hardware test, timing validation, or clinical validation.

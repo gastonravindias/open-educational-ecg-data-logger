@@ -1,0 +1,12 @@
+Subsystem,Signal,ESP32-C3 pin,Function
+I2C,SDA,GPIO20,"OLED, DS3231 and INA219 data"
+I2C,SCL,GPIO21,"OLED, DS3231 and INA219 clock"
+microSD,SCK,GPIO4,SPI clock
+microSD,MISO,GPIO5,Data from card
+microSD,MOSI,GPIO6,Data to card
+microSD,CS,GPIO7,Chip select
+AD8232,OUT,GPIO0 / ADC,Raw analogue signal
+AD8232,LO+,GPIO1,Lead-off positive
+AD8232,LO-,GPIO3,Lead-off negative
+AD8232,SDN,GPIO10,Run/shutdown
+Buzzer,IN,GPIO2,Active-low warning

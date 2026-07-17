@@ -1,0 +1,12 @@
+Function,Evidence retained,Interpretation
+Physical integration,Prototype and module photographs,One breadboard proof-of-concept was assembled
+OLED operation,Photographs of status and waveform screens,Local display function demonstrated qualitatively
+Serial streaming,Serial-plotter screenshots,Analogue waveform streaming demonstrated qualitatively
+Lead/status interface,OLED photographs and documented LO pins,Interface behaviour shown but response time not quantified
+RTC pathway,Time field visible and DS3231 documented,Timestamp architecture present; timing error not measured
+microSD pathway,Module present and reference firmware provided,Long-duration reliability and write-success rate not retained
+Power monitoring,INA219 and regulator photographs,Hardware pathway present; quantitative logs not retained
+Battery runtime,No retained runtime record,Not evaluated
+Solar charging,Panel and power-path photographs,Integration shown; charging performance not evaluated
+Clinical ECG accuracy,No reference ECG comparison,Not claimed
+Independent replication,One original build only,Not completed
