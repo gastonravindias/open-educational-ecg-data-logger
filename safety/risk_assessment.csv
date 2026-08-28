@@ -1,7 +1,9 @@
 Hazard,Cause,Control,Evidence/verification
-External electrical path,USB/charger connected during electrode use,Battery-only policy; physical disconnection,Pre-use checklist
-Exposed conductors,Open breadboard,No human-connected use; supervised bench work only,Visual inspection
-Battery fault,"Wrong polarity, incompatible charger or unprotected cell",Protected source and compatibility check,Voltage/polarity inspection
-Signal misinterpretation,Qualitative waveform treated as diagnosis,No clinical interpretation or automated diagnosis,Firmware and labels
-Data loss,SD write interruption,"Status field, periodic flush and file inspection",Functional test protocol
-Lead-off/noise,Loose or open lead,LO+/LO- status logging,Simulator/open-lead test
+Human electrical exposure,Person attached to the open breadboard or AD8232 lead cable,"Human attachment is prohibited; use an ECG simulator for waveform-acquisition exercises","Safety policy; pre-use checklist"
+External electrical path,"USB, charger, mains-powered computer, oscilloscope, or other externally powered equipment connected while the AD8232 simulator lead interface is attached","Disconnect the AD8232 lead cable before USB programming, charging, serial debugging, or connection to externally powered test equipment","Pre-use checklist; visual inspection"
+Exposed conductors,Open breadboard and loose jumper wiring,"Supervised bench work only; inspect exposed conductors, jumper security, cable condition, and ground continuity before operation","Visual inspection"
+Battery or power fault,"Wrong polarity, unstable regulator output, incompatible charger, or unprotected cell","Use a protected 1S battery-derived source; set and verify the regulator output at 3.3 V before connecting modules","DMM voltage and polarity check"
+Absence of medical isolation,No documented certified patient-isolation barrier or leakage-current validation,"No human attachment; no medical-device or electrical-safety compliance claim","Safety policy; manuscript limitation"
+Signal misinterpretation,Qualitative waveform or raw ADC counts treated as calibrated or diagnostic measurements,"No clinical interpretation; retain raw ADC counts unless an independent calibration experiment has been performed; use simulator-based exercises","Firmware labels; test protocol"
+Data loss,SD write interruption or unexpected power loss,"Use storage-status reporting, periodic file flush, file inspection, and preservation of raw files after each run","Functional test protocol"
+Lead-off or noise,"Loose or open simulator lead, poor ground, or unstable breadboard connection","Use LO+/LO- status logging, staged troubleshooting, and simulator/open-lead testing","Simulator/open-lead test"
