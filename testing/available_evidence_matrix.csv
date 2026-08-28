@@ -1,12 +1,13 @@
-Function,Evidence retained,Interpretation
+Function,Evidence retained from original prototype,Interpretation in v1.1.0
 Physical integration,Prototype and module photographs,One breadboard proof-of-concept was assembled
-OLED operation,Photographs of status and waveform screens,Local display function demonstrated qualitatively
-Serial streaming,Serial-plotter screenshots,Analogue waveform streaming demonstrated qualitatively
-Lead/status interface,OLED photographs and documented LO pins,Interface behaviour shown but response time not quantified
-RTC pathway,Time field visible and DS3231 documented,Timestamp architecture present; timing error not measured
-microSD pathway,Module present and reference firmware provided,Long-duration reliability and write-success rate not retained
-Power monitoring,INA219 and regulator photographs,Hardware pathway present; quantitative logs not retained
-Battery runtime,No retained runtime record,Not evaluated
-Solar charging,Panel and power-path photographs,Integration shown; charging performance not evaluated
-Clinical ECG accuracy,No reference ECG comparison,Not claimed
+OLED operation,Photographs of status/waveform screens,Local display operation demonstrated qualitatively
+Serial streaming,Serial-plotter photographs,Analogue signal streaming demonstrated qualitatively; numerical source series not retained
+Lead/status interface,Displayed status and documented LO pins,Interface pathway present; response time not quantified
+RTC pathway,Time field and DS3231 module,Timestamp pathway present; timing accuracy not measured
+microSD pathway,"Module, wiring and reference firmware",Logging pathway implemented; long-duration reliability/write-success rate not retained
+Power telemetry,INA219/regulator photographs,Hardware pathway present; quantitative logs not retained
+ADC amplitude calibration,No traceable applied-voltage dataset,Count-to-voltage conversion not experimentally validated
+Sampling accuracy/jitter,No retained timing-validation dataset,4000 microsecond interval is a code-defined setting only
+Clinical/diagnostic accuracy,No reference clinical ECG comparison,Not claimed
+ECG-versus-EMG discrimination,No retained raw numerical waveform/reference classification dataset,Not established by archived material
 Independent replication,One original build only,Not completed
