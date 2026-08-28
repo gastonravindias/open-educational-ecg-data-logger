@@ -1,13 +1,13 @@
-item,quantity,reference_requirement_or_identification,alternative_or_note
-ESP32-C3 SuperMini development board,1,Photographed SuperMini-format ESP32-C3; 3.3 V logic; GPIO availability matching pin map,Equivalent ESP32-C3 only after pin remapping is documented
-AD8232 ECG breakout,1,"Photographed SparkFun AD8232/SEN-12650-type; 3.3 V; OUT, LO+, LO-, SDN",Equivalent AD8232 breakout with documented pinout
-SSD1306 OLED 128x64 I2C,1,3.3 V-compatible; address commonly 0x3C but verify,Equivalent I2C OLED after address verification
-DS3231 RTC,1,"I2C RTC, 3.3 V-compatible interface",Equivalent I2C RTC if firmware adapted
-microSD module and card,1,"SPI, compatible with 3.3 V ESP32-C3 logic",Document level shifting/regulation if module differs
-INA219 breakout,1 optional,I2C power telemetry,May be omitted
-TPS63020 regulator module,1,Battery-side regulator; output set/verified 3.3 V,Equivalent regulated battery-derived 3.3 V source
-Active-low buzzer,1 optional,3.3 V-compatible logic,May be omitted
-Three-lead RA/LA/RL-style cable,1,Compatible with AD8232,Simulator connection only in this protocol
-Breadboard and jumpers,as required,2.54 mm prototyping hardware,Prefer short secure jumpers
-Protected 1S Li-ion/LiPo battery pack,1,"3.7 V nominal, through verified regulator",No mains-powered supply while lead interface attached
-ECG simulator,1 per bench,Battery-operated or appropriately isolated; use manufacturer instructions,Required for reproducible waveform exercise
+item,quantity,historical_identification_status,required_specification,suitable_alternative_or_note
+ESP32-C3 SuperMini development board,1,SuperMini-format ESP32-C3 visible in retained photographs; original supplier/stock code not retained,3.3 V logic; GPIO availability matching hardware/pin_map.csv,Equivalent ESP32-C3 board only after documented pin remapping
+AD8232 ECG breakout,1,SparkFun AD8232/SEN-12650-type breakout identified from retained hardware; exact purchase record not retained,"3.3 V-compatible breakout exposing OUT, LO+, LO-, SDN, 3.3 V and GND",Equivalent AD8232 breakout with documented pinout
+SSD1306 OLED 128x64 I2C,1,Controller/display family documented; exact breakout vendor/part number not retained,128×64 I2C OLED; 3.3 V-compatible interface; verify actual I2C address,Equivalent 128×64 I2C OLED after address and voltage verification
+DS3231 RTC breakout,1,DS3231 family documented; exact breakout vendor/part number not retained,I2C RTC with 3.3 V-compatible interface,Equivalent I2C RTC if firmware/library adaptation is documented
+microSD module and card,1,Module function documented; exact vendor/part number not retained,SPI interface compatible with 3.3 V ESP32-C3 logic,Document any onboard regulator/level shifting if a different module is used
+INA219 breakout,1 optional,INA219 family documented; exact breakout vendor/part number not retained,I2C voltage/current monitor with 3.3 V-compatible interface,May be omitted when power telemetry is not part of the exercise
+TPS63020 regulator module,1,TPS63020 regulator family documented; exact module vendor/part number not retained,Battery-side regulator adjusted and verified to 3.3 V output before module connection,Equivalent regulated battery-derived 3.3 V source
+Active-low buzzer module,1 optional,Function/polarity documented; exact part number not retained,3.3 V-compatible active-low logic input,May be omitted when audible status is not required
+Three-lead RA/LA/RL-style cable,1,Lead arrangement documented; original cable stock code not retained,Compatible with the AD8232 breakout and ECG simulator terminals,Simulator connection only in the v1.1.0 educational protocol
+Breadboard and jumper wires,as required,Standard prototyping hardware,2.54 mm breadboard/jumpers; secure low-resistance contacts,"Prefer short, secure jumpers"
+Protected 1S Li-ion/LiPo battery pack,1,Safety-oriented v1.1.0 requirement; original exact battery purchase record not retained,"Protected 1S pack, nominal 3.7 V, used through a verified 3.3 V regulator",Equivalent protected battery-derived supply meeting module requirements
+ECG simulator,1 per bench,Not part of the original hardware BOM; added as the permitted reproducible waveform source,Battery-operated or appropriately isolated ECG simulator used per manufacturer instructions,Required for reproducible waveform exercises; do not substitute human attachment
