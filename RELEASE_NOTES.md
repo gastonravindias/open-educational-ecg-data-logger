@@ -1,3 +1,44 @@
+# Release v1.1.0 — Peer-review documentation revision
+
+This release was prepared in response to Journal of Open Hardware peer review.
+
+## Main revisions
+
+- Added a substantially expanded undergraduate-oriented assembly guide with staged subsystem bring-up and troubleshooting.
+- Added a full component-level connection diagram in editable SVG and exported PNG formats.
+- Expanded the bill of materials with quantities, electrical/interface requirements and suitable alternatives.
+- Added simulator-centred educational laboratory exercises covering waveform acquisition, plotting, ADC characterisation, timing and storage assessment.
+- Added explicit learning objectives, expected observations and common artefacts/failure modes.
+- Strengthened the safety policy and risk assessment.
+- Human attachment to the open breadboard is prohibited in the revised educational protocol.
+- ECG waveform exercises use a battery-operated or appropriately isolated ECG simulator.
+- Clarified that the prototype has no documented certified patient-isolation barrier, leakage-current validation or medical electrical-safety validation.
+- Added FAIR and data-accessibility documentation.
+- Added repository navigation and software dependency/version guidance.
+- Clarified that the firmware records raw ADC counts and that historical count-to-voltage conversion was not experimentally validated.
+- Explicitly separated code-defined settings from experimentally validated performance.
+- Removed the solar subsystem from the revised educational core.
+- Historical solar-related files may remain for provenance, but no solar charging, runtime or self-powered performance claim is made.
+- Added revised manuscript figures and documentation prepared in response to peer review.
+
+## Historical evidence boundary
+
+The original prototype archive does not contain:
+
+- the numerical raw ECG/ADC dataset corresponding to the retained serial-plotter photographs;
+- a traceable amplitude-calibration dataset;
+- measured ADC gain, offset or linearity results;
+- measured sampling jitter or dropped-sample results; or
+- independent replication data.
+
+These unavailable measurements have not been reconstructed or invented.
+
+The retained visual evidence supports qualitative functional demonstration only.
+
+Future quantitative claims should be supported by newly generated and preserved raw data using the revised testing protocol.
+
+---
+
 # Release v1.0.0
 
 - Reframed project as educational open hardware.
