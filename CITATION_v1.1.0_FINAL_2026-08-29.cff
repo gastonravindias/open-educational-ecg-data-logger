@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite the associated Journal of Open Hardware article and this release."
+title: "Open Educational ECG Acquisition and Data-Logging Platform Using AD8232 and ESP32-C3"
+version: "v1.1.0"
+date-released: "2026-08-29"
+repository-code: "https://github.com/gastonravindias/open-educational-ecg-data-logger"
+license: "CERN-OHL-P-2.0"
+authors:
+  - family-names: "Ambati"
+    given-names: "Shreyas"
+    email: "shreyasambati64@gmail.com"
+  - family-names: "Dias"
+    given-names: "Gaston Ravin"
+    email: "sam.gastondias@gmail.com"
+    orcid: "https://orcid.org/0009-0006-6596-788X"
+  - family-names: "Ahmad"
+    given-names: "Mohd Yazed bin"
+    email: "myaz@um.edu.my"
