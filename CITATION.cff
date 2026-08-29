@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "Please cite the associated Journal of Open Hardware article and this release."
 title: "Open Educational ECG Acquisition and Data-Logging Platform Using AD8232 and ESP32-C3"
 version: "v1.1.0"
-date-released: "2026-08-28"
+date-released: "2026-08-29"
 repository-code: "https://github.com/gastonravindias/open-educational-ecg-data-logger"
 license: "CERN-OHL-P-2.0"
 authors:
